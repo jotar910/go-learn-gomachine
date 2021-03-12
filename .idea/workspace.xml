@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ceba7ac-6525-4402-9960-679a07fb73d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmachine.go" beforeDir="false" afterPath="$PROJECT_DIR$/gmachine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmachine_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gmachine_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +30,36 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.go test gmachine">
+    <configuration name="TestHALT in gmachine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-learn-gomachine" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gmachine" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestHALT\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNOOP in gmachine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-learn-gomachine" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gmachine" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestNOOP\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestNew in gmachine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-learn-gomachine" />
       <working_directory value="$PROJECT_DIR$" />
@@ -41,8 +71,21 @@
       <pattern value="^\QTestNew\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="go test gmachine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-learn-gomachine" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gmachine" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test gmachine" />
+        <item itemvalue="Go Test.TestNOOP in gmachine" />
+        <item itemvalue="Go Test.TestHALT in gmachine" />
         <item itemvalue="Go Test.TestNew in gmachine" />
       </list>
     </recent_temporary>
@@ -53,5 +96,23 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom" timestamp="1615591061427">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
+    <state width="1874" height="248" key="GridCell.Tab.0.center" timestamp="1615591061426">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
+    <state width="1874" height="248" key="GridCell.Tab.0.left" timestamp="1615591061425">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061425" />
+    <state width="1874" height="248" key="GridCell.Tab.0.right" timestamp="1615591061426">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
   </component>
 </project>
