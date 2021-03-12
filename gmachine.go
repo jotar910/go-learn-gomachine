@@ -8,11 +8,14 @@ const DefaultMemSize = 1024
 const (
 	OpHALT = iota
 	OpNOOP
+	OpINCA
+	OpDECA
 )
 
 type GoMachine struct {
 	Memory [DefaultMemSize]uint64
-	P      uint64
+	P      uint64 // Program Counter
+	A      uint64 // Accumulator
 }
 
 func New() GoMachine {
@@ -22,7 +25,14 @@ func New() GoMachine {
 func (g *GoMachine) Run() {
 	stop := false
 	for !stop {
-		stop = g.Memory[g.P] == OpHALT
+		switch g.Memory[g.P] {
+		case OpINCA:
+			g.A += 1
+		case OpDECA:
+			g.A -= 1
+		case OpHALT:
+			stop = g.Memory[g.P] == OpHALT
+		}
 		g.P += 1
 	}
 }

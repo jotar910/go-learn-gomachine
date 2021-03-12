@@ -37,7 +37,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Go Test.go test gmachine">
+  <component name="RunManager" selected="Go Test.TestNew in gmachine">
     <configuration name="TestHALT in gmachine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-learn-gomachine" />
       <working_directory value="$PROJECT_DIR$" />
@@ -83,10 +83,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestNew in gmachine" />
         <item itemvalue="Go Test.go test gmachine" />
         <item itemvalue="Go Test.TestNOOP in gmachine" />
         <item itemvalue="Go Test.TestHALT in gmachine" />
-        <item itemvalue="Go Test.TestNew in gmachine" />
       </list>
     </recent_temporary>
   </component>
@@ -98,21 +98,21 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="248" key="GridCell.Tab.0.bottom" timestamp="1615591061427">
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom" timestamp="1615591902440">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
-    <state width="1874" height="248" key="GridCell.Tab.0.center" timestamp="1615591061426">
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1615591902440" />
+    <state width="1874" height="248" key="GridCell.Tab.0.center" timestamp="1615591902440">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
-    <state width="1874" height="248" key="GridCell.Tab.0.left" timestamp="1615591061425">
+    <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1615591902440" />
+    <state width="1874" height="248" key="GridCell.Tab.0.left" timestamp="1615591902440">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061425" />
-    <state width="1874" height="248" key="GridCell.Tab.0.right" timestamp="1615591061426">
+    <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1615591902440" />
+    <state width="1874" height="248" key="GridCell.Tab.0.right" timestamp="1615591902440">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1615591061426" />
+    <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1615591902440" />
   </component>
 </project>
