@@ -10,6 +10,7 @@ const (
 	OpNOOP
 	OpINCA
 	OpDECA
+	OpSETA
 )
 
 type GoMachine struct {
@@ -32,7 +33,17 @@ func (g *GoMachine) Run() {
 			g.A -= 1
 		case OpHALT:
 			stop = g.Memory[g.P] == OpHALT
+		case OpSETA:
+			g.P += 1
+			g.A = g.Memory[g.P]
 		}
 		g.P += 1
 	}
+}
+
+func (g *GoMachine) RunProgram(insts []uint64) {
+	for i, inst := range insts {
+		g.Memory[i] = inst
+	}
+	g.Run()
 }

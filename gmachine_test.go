@@ -49,8 +49,7 @@ func TestNOOP(t *testing.T) {
 	if wantP != g.P {
 		t.Errorf("want P == %d, got P == %d", wantP, g.P)
 	}
-	g.Memory[0] = gmachine.OpNOOP
-	g.Run()
+	g.RunProgram([]uint64{gmachine.OpNOOP})
 	wantP = 2
 	if wantP != g.P {
 		t.Errorf("want P == %d, got P == %d", wantP, g.P)
@@ -86,4 +85,55 @@ func TestDECA(t *testing.T) {
 	if wantA != g.A {
 		t.Errorf("want P == %d, got P == %d", wantA, g.A)
 	}
+}
+
+func TestSETA(t *testing.T) {
+	t.Parallel()
+	g := gmachine.New()
+	var wantA uint64 = 0
+	if wantA != g.A {
+		t.Errorf("want A == %d, got A == %d", wantA, g.A)
+	}
+	g.Memory[0] = gmachine.OpSETA
+	g.Memory[1] = 3
+	g.Run()
+	wantA = 3
+	if wantA != g.A {
+		t.Errorf("want A == %d, got A == %d", wantA, g.A)
+	}
+	var wantP uint64 = 3
+	if wantP != g.P {
+		t.Errorf("want P == %d, got P == %d", wantP, g.P)
+	}
+}
+
+func TestSub2To3(t *testing.T) {
+	t.Parallel()
+	g := gmachine.New()
+	g.Memory[0] = gmachine.OpSETA
+	g.Memory[1] = 3
+	g.Memory[2] = gmachine.OpDECA
+	g.Memory[3] = gmachine.OpDECA
+	g.Run()
+	var wantA uint64 = 1
+	if wantA != g.A {
+		t.Errorf("want A == %d, got A == %d", wantA, g.A)
+	}
+	var wantP uint64 = 5
+	if wantP != g.P {
+		t.Errorf("want P == %d, got P == %d", wantP, g.P)
+	}
+}
+
+func TestRunProgram(t *testing.T) {
+	t.Parallel()
+	g := gmachine.New()
+	g.RunProgram([]uint64{
+		gmachine.OpNOOP,
+		gmachine.OpHALT,
+	})
+	if g.P != 2 {
+		t.Errorf("want P == 2, got %d", g.P)
+	}
+
 }
